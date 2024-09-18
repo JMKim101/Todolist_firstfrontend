@@ -14,7 +14,7 @@ h1 {
 
 .header {
     display: flex;
-    width: 35%;
+    width: 50%;
     border: 1px solid #AF78F2;
     padding: 10px;
     margin: 150px auto;
@@ -34,7 +34,7 @@ h1 {
 
 .todo-container {
     max-width: 800px;
-    width: 35%;
+    width: 50%;
     height: 400px;
     border: 1px solid #FFFFFF;
     padding: 10px;
@@ -45,6 +45,65 @@ h1 {
     font-family: sans-serif;
     font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#inputField #todoInput {
+    width: calc(100% - 45px);
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#inputField #todoInput:focus {
+    outline: none;
+}
+
+#inputField #addBtn {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: #AF7EEB;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+/*  Adding the '+' button */
+#inputField #addBtn span {
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: #E1E9FF;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#inputField #addBtn span:last-child {
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+
+#todoList {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+
+#todoList li {
+    padding: 10px 0;
+    user-select: none;
+}
+
+#todoList button {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-right: 8px;
+    border: 1px solid #AF78F2;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 ul {
