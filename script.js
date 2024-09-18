@@ -27,4 +27,12 @@ function createTodo() {
   todoList.appendChild(newLi);
 
   todoInput.value = '';
+
+  newBtn.addEventListener('click', () => {
+    newLi.classList.toggle('complete');
+  });
+
+  newLi.addEventListener('dblclick', () => {
+    newLi.remove();
+  });
 }

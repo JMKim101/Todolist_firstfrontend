@@ -112,3 +112,18 @@ ul {
     margin: 10px;
     font-size: 25px;
 }
+
+#todoList li.complete {
+    text-decoration: line-through;
+    color: rgb(155, 155, 155);
+}
+
+#todoList li.complete button::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    transform: translate(-2px, -2px) rotate(45deg);
+    border-right: 2px solid #f1b116;
+    border-bottom: 2px solid #f1b116;
+}
